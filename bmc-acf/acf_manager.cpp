@@ -122,8 +122,6 @@ std::tuple<std::vector<uint8_t>, bool, std::string> ACFCertMgr::getACFInfo(void)
         {
             log<level::INFO>("ACF is not valid");
             log<level::ERR>("Error: ", entry("rc=%0x", rc));
-            accessControlFile.clear();
-            sDate.clear();
         }
     }
 
